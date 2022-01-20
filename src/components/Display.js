@@ -6,7 +6,9 @@ import '../index.css'
 
 function Display({name, charactername, description, image, ageofactor}){ 
 
-    return(<Card> 
+    return(
+    <div className='shadow'>
+    <Card style={{backgroundColor: ' darkblue'}}> 
          <CardContent>
      <h1>{charactername}</h1>
 
@@ -19,7 +21,7 @@ function Display({name, charactername, description, image, ageofactor}){
      <Copyright />
     </CardContent>
     </Card>
-
+</div>
 
 
 
